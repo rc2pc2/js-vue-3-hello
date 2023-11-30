@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    padding: 2rem;
+}
+
+h1,
+div{
+    margin-bottom: 2rem;
+}
+
+label{
+    margin-right: .5rem;
+}
+
+button{
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: .35rem .7rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: rgb(193, 255, 234);
+}
+
+button:active{
+    border-color: rgb(191, 191, 191);
+}
+
+.yellow{
+    color: yellow;
+}
+
+
+.blue{
+    color: blue;
+}
+
+.magenta{
+    color: magenta;
+}

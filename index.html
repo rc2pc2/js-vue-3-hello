@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 Hello</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <main>
+            <div>
+                <label for="firstName">Type here your first name:</label>
+                <input type="text" v-model="firstName" id="firstName" name="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Type here your last  name:</label>
+                <input type="text" v-model="lastName" id="lastName" name="lastName">
+            </div>
+
+            <div>
+                <label for="classes">Type classes to apply:</label>
+                <input type="text" v-model="classString" id="classes" name="classes" @keyup.enter="saluta(classString)">
+            </div>
+
+            <div>
+                <p class="d-block fs-2" :title="classString"  >
+                    Welcome {{ firstName }} {{ lastName }}
+                </p>
+            </div>
+
+            <div>
+                <button @click="saluta(classString)">
+                    Cliccami please!
+                </button>
+            </div>
+
+
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
