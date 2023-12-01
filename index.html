@@ -12,34 +12,18 @@
 
     <div id="app">
         <main>
-            <div>
-                <label for="firstName">Type here your first name:</label>
-                <input type="text" v-model="firstName" id="firstName" name="firstName">
-            </div>
-
-            <div>
-                <label for="lastName">Type here your last  name:</label>
-                <input type="text" v-model="lastName" id="lastName" name="lastName">
-            </div>
-
-            <div>
-                <label for="classes">Type classes to apply:</label>
-                <input type="text" v-model="classString" id="classes" name="classes" @keyup.enter="saluta(classString)">
-            </div>
-
-            <div>
-                <p class="d-block fs-2" :title="classString"  >
-                    Welcome {{ firstName }} {{ lastName }}
-                </p>
-            </div>
-
-            <div>
-                <button @click="saluta(classString)">
-                    Cliccami please!
-                </button>
-            </div>
-
-
+            <h1>
+                {{ text }}
+            </h1>
+            <pre>
+                Counter: {{ counter }}
+            </pre>
+            <button @click="decrementCounter(1)">
+                Subtract to counter
+            </button>
+            <button @click="incrementCounter(1)">
+                Add to counter
+            </button>
         </main>
     </div>
 
